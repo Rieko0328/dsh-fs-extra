@@ -1,5 +1,8 @@
 # dsh-fs-extra
 
+> 仓库: https://github.com/Rieko0328/dsh-fs-extra
+> License: MIT · 在 DSH `0.2.0-rc.2`（Windows）上开发并实测通过
+
 **为 DeepSeek Harness 补齐文件工具缺失的删除 / 建目录 / 移动能力。**
 
 DSH 内置的文件工具（`write` / `edit`）只有**写入**能力，没有删除、建目录、移动。
@@ -74,7 +77,13 @@ DSH 内置的文件工具（`write` / `edit`）只有**写入**能力，没有�
 
 ## 安装
 
-### 作为 bundle（推荐，独立于任何注入器）
+### 从 GitHub 安装
+
+```powershell
+dsh plugin --profile <profile> add "github:Rieko0328/dsh-fs-extra"
+```
+
+### 作为本地 bundle（独立于任何注入器）
 
 ```powershell
 dsh plugin --profile <profile> add "E:\path\to\dsh-fs-extra"
